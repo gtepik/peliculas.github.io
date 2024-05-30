@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+body{
+    background: url(luffy2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#header .logo{
+    color: red;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-decoration: none;
+     
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#header ul li {
+    list-style:none ;
+    margin-left: 20px;
+    font-size: 14px;
+    font-size: 1.3em;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: ghostwhite;
+    border-radius: 2px;
+}
+#header ul li a:hover{
+    background: linear-gradient(45deg,red,rgb(245,14,122));
+    color: rgb(253,252,252);
+}
+#movie-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(154, 74, 74, 0.3); 
+    padding: 20px;
+}
+
+#movie-controls h2 {
+    margin-top: 0;
+    margin-top: 80px;
+}
+
+#movie-controls input,
+#movie-controls button {
+    margin-bottom: 10px;
+}
+
+#movie-title,
+#movie-image {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-movie,
+#edit-movie,
+#delete-movie {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-movie:hover,
+#edit-movie:hover,
+#delete-movie:hover {
+    background-color: #0056b3;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .content{
+    position: absolute;
+    left: 2px;
+    top:625px;
+}
+section .content .details span{
+    position: relative;
+    top: -245px;
+    left: 108px;
+    color: ghostwhite;
+    margin: 12px;
+    font-weight: 400;
+}
+.details span:last-child{
+    border: 1px solid rgb(182, 181,181);
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.button span{
+    position: relative;
+    top: -205px;
+    left:108px;
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+}
+.button .btn1{
+    background: red;
+    padding: 14px 26px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.button .btn1:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.button .btn2{
+    background: #ffffff2e;
+    padding: 14px 26px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.button .btn2:hover{
+    background: #fff;
+    color: red;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.sec{
+    position: relative;
+    top: 0;
+    height: 500px;
+    padding-left: 410px;
+    background-color: #021610;
+}
+.sec span{
+    position: relative;
+    margin-bottom: 10px;
+    color: #fff;
+    margin: 7px;
+}
+.sec .title{
+    width: 610px;
+    float: left;
+    margin-right: 40px;
+    transform: translateY(-65px);
+    font-weight: 600;
+}
+.sec .title1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.sec .btn3{
+    font-size: 12px;
+    text-decoration: underline;
+}
+.info{
+    position: absolute;
+    top: -150px;
+    transform: translateY(-110px);
+}
+.sec .row{
+    position: absolute;
+    top: -90px;
+    height: 200px;
+    width: 62%;
+}
+.sec .row .col{
+    width: 180px;
+    height: 148px;
+    float: left;
+    justify-content: left;
+    align-items: left;
+    margin-left: 72px;
+}
+.sec .row .col:first-child{
+    margin: 0px;
+    margin-left: 5px;
+}
+.sec .row .col img{
+    transition: 0.5s;
+    transform: translateY(-90px);
+}
+.sec .row .col img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sec .row2{
+    position: absolute;
+    top:88px;
+    height: 200px;
+    width: 82%;
+    transform: translateY(200px);
+    color: #fff;
+}
+.sec .row2 .col1{
+    width: 810px;
+    float: left;
+    margin-right: 70px;
+}
+.sec .row2 .col2{
+    overflow: hidden;
+}
+.sec .row2 .col p{
+    color: #fff;
+    margin-bottom:18px ;
+    font-size: 20px;
+}
+sec .row4{
+    position: absolute;
+    top: 88px;
+    height: 200px;
+    width: 82%;
+}
+.sec .row4 .col4{
+    width: 810px;
+    float: left;
+    margin-right: 70px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 120px auto 20px; /* Añade un margen superior de 80px */
+    padding: 20px;
+    position: relative;
+}
+#nameInput {
+    margin-top: 90px; /* Ajusta el valor del margen según sea necesario */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+#nameForm {
+    margin-bottom: 20px;
+}
+
+#nameTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#nameTable th, #nameTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#nameTable th {
+    background-color: #f2f2f2;
+}
+
+#nameTable td {
+    text-align: center;
+}
+
+#nameTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#nameTable tr:hover {
+    background-color: #ddd;
+}
+
+#nameTable th:nth-child(2),
+#nameTable td:nth-child(2) {
+    width: 100px;
+}
+
+#nameForm {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#nameInput {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
